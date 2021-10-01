@@ -21,6 +21,13 @@
     src: url('../fonts/Roboto-Regular.ttf') format('ttf');
 }
 
+.duckdonut-theme{
+	--primary:#f5426c;
+	--secondary:#5eb0e5;
+	--wizardbg:#afd9f3;
+}
+
+
 
 /*Dynamimc Icons*/
 .coating1 {
@@ -425,7 +432,7 @@ a:hover {
 .funky span {
     font-family: Poppins;
     font-size: 36px;
-    color: #f5426c;
+    color: var(--primary);
     font-weight: bold;
 }
 
@@ -436,7 +443,7 @@ a:hover {
 
 /*Zig Zag Background*/
 .zig-zag-top:before {
-    background: linear-gradient(-45deg, #afd9f3 45px, red 45px, blue 45px, transparent 0), linear-gradient(45deg, #afd9f3 45px, transparent 0);
+    background: linear-gradient(-45deg, var(--wizardbg) 45px, red 45px, blue 45px, transparent 0), linear-gradient(45deg, var(--wizardbg) 45px, transparent 0);
     background-position: left top;
     background-repeat: repeat-x;
     background-size: 44px 62px;
@@ -452,13 +459,13 @@ a:hover {
 .zig-zag-bottom {
     margin: 32px 0;
     margin-top: 0;
-    background: #afd9f3;
+    background: var(--wizardbg);
 }
 
 .zig-zag-top {
     margin: 0;
     margin-bottom: 0;
-    background: #afd9f3;
+    background: var(--wizardbg);
 }
 
 .zig-zag-bottom,
@@ -467,7 +474,7 @@ a:hover {
 }
 
 .zig-zag-bottom:after {
-    background: linear-gradient(-45deg, transparent 45px, #afd9f3 0), linear-gradient(45deg, transparent 45px, #afd9f3 0);
+    background: linear-gradient(-45deg, transparent 45px, var(--wizardbg) 0), linear-gradient(45deg, transparent 45px, var(--wizardbg) 0);
     background-repeat: repeat-x;
     background-position: left bottom;
     background-size: 44px 62px;
@@ -630,7 +637,7 @@ a:hover {
     font-size: 28px;
     text-transform: uppercase;
     -webkit-font-smoothing: subpixel-antialiased;
-    background-color: #f5426c;
+    background-color: var(--primary);
     border-radius: 64px;
     top: 4px;
     left: 4px;
@@ -804,8 +811,8 @@ a:hover {
     height: 90px;
     border-radius: 20px;
     background: #fff;
-    border: solid 3px #f5426c;
-    color: #f5426c;
+    border: solid 3px var(--primary);
+    color: var(--primary);
     font-family: Poppins;
     font-size: 30px;
     font-weight: 600;
@@ -858,8 +865,8 @@ a:hover {
 }
 
 .choices input[type="checkbox"]:checked+label {
-    border: solid 3px #f5426c;
-    color: #f5426c;
+    border: solid 3px var(--primary);
+    color: var(--primary);
 }
 
 .choices input[type="checkbox"]:checked+label:hover {
@@ -897,7 +904,7 @@ a:hover {
     font-family: Poppins;
     font-size: 24px;
     font-weight: 600;
-    color: #f5426c;
+    color: var(--primary);
     text-transform: uppercase;
 }
 
@@ -912,7 +919,7 @@ a:hover {
     font-family: Poppins;
     font-size: 24px;
     font-weight: 600;
-    color: #5eb0e5;
+    color: var(--secondary);
     text-transform: uppercase;
 }
 
@@ -938,7 +945,7 @@ a:hover {
     width: 45px;
     text-align: center;
     font-size: 20px;
-    border: solid 3px #f5426c;
+    border: solid 3px var(--primary);
     border-radius: 10px;
     font-family: Poppins;
     line-height: 40px;
@@ -952,7 +959,7 @@ a:hover {
 
 .quantity input[type="checkbox"]:checked+label {
     color: #fff;
-    background-color: #f5426c;
+    background-color: var(--primary);
 
 }
 
@@ -974,9 +981,9 @@ a:hover {
 }
 
 .btn-add.active {
-    background: #f5426c;
+    background: var(--primary);
     color: #fff;
-    border-color: #f5426c;
+    border-color: var(--primary);
 }
 
 .btn-cancel {
@@ -987,7 +994,7 @@ a:hover {
     font-weight: 600;
     border-radius: 20px;
     border: solid 2px #d3e2eb;
-    background-color: #5eb0e5;
+    background-color: var(--secondary);
     color: #fff;
 }
 
@@ -1044,7 +1051,7 @@ a:hover {
 .btn-minus {
     width: 50px;
     height: 50px;
-    background: #f5426c;
+    background: var(--primary);
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -1057,7 +1064,7 @@ a:hover {
 
 .btn-edit {
     width: 165px;
-    background-color: #5eb0e5;
+    background-color: var(--secondary);
     color: #fff;
     border-radius: 10px;
     font-family: Roboto;
@@ -1071,7 +1078,7 @@ a:hover {
 	 width:100%;
 }
 .footer-review .btn-checkout{
-	background-color:#f5426c;
+	background-color:var(--primary);
 	padding:25px;
 	text-transform:uppercase;
 	color:#fff;
