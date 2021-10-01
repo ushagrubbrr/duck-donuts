@@ -376,7 +376,7 @@
 					return false;
 				}
 			},
-		
+	
 			onInit : function(tab, navigation, index){
 	
 			  //check number of tabs and fill the entire row
@@ -389,10 +389,10 @@
 			  if($display_width < 600 && $total > 3){
 				  $width = 50;
 			  }*/
-		
+			  
 			   navigation.find('li').css('width',$width + '%');
 			   $first_li = navigation.find('li:first-child a').html();
-			   $moving_div = $('<div class="moving-tab">' + '<img src="images/coating.svg"/>' + $first_li + '</div>');
+			   $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
 			   $('.wizard-card .wizard-navigation').append($moving_div);
 			   refreshAnimation($wizard, index);
 			   $('.moving-tab').css('transition','transform 0s');
