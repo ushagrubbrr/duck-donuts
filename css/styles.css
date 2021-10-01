@@ -11,6 +11,17 @@
     src: url('../fonts/AmaticSC-Regular.ttf') format('ttf');
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+
 /*Dynamimc Icons*/
 .coating1 {
     --icons: url("../images/Coating.svg");
@@ -405,10 +416,12 @@ a:hover {
     color: #170b0e;
     margin-top: 23px;
 }
-.funky img{
-	width:35px;
-	height:auto;
+
+.funky img {
+    width: 35px;
+    height: auto;
 }
+
 .funky span {
     font-family: Poppins;
     font-size: 36px;
@@ -875,9 +888,11 @@ a:hover {
 .bottom-section .left-section {
     width: 650px;
 }
-.bottom-section .left-section img{
-	width:90%;
+
+.bottom-section .left-section img {
+    width: 95%;
 }
+
 .coating-head {
     font-family: Poppins;
     font-size: 24px;
@@ -992,4 +1007,77 @@ a:hover {
     text-align: center;
     color: #000;
     width: 90%;
+}
+.review-list{
+	height:83vh;
+	overflow-y:scroll;
+}
+.each-item{
+	padding:28px 40px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.review-list img {
+    width: 64px;
+    height: 64px;
+}
+.review-list div{
+	font-family: Poppins;
+	font-size: 34px;
+	font-weight: 600;
+	color:#000;
+}
+.review-list h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #170b0e;
+}
+
+.review-list h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    color: #555;
+}
+
+.btn-plus,
+.btn-minus {
+    width: 50px;
+    height: 50px;
+    background: #f5426c;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.btn-edit {
+    width: 165px;
+    background-color: #5eb0e5;
+    color: #fff;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 500;
+}
+.footer-review{	
+	 padding: 40px 25px;
+	 position:fixed;
+	 bottom:0;
+	 width:100%;
+}
+.footer-review .btn-checkout{
+	background-color:#f5426c;
+	padding:25px;
+	text-transform:uppercase;
+	color:#fff;
+	border-radius:20px;
+	width:100%;
+	font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
 }
