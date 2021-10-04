@@ -21,77 +21,81 @@
     <link rel="apple-touch-icon" href="https://static.olocdn.net/img/duckdonuts/apple-touch-icon.png?1632750803">
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body class="duckdonut-theme">
+<body>
 
 
-    <section class="py-25 px-40">
-        <div class="d-flex flex-row flex-nowrap justify-content-between mb-24">
-            <!-- Image Logo -->
+    <section class="donut-box-section">
+        <div class="dbs-header">
             <a class="logo-image" href="index.html"><img src="images/logo.png" class="img-fluid" /></a>
+
             <a class="close-btn" href="#">
-                <i class="fas fa-times"></i>
+                <span class="material-icons">
+                    close
+                </span>
             </a>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <h1>Build Your Own Dozen</h1>
-                <h3 class="customise-content">Customize your box by selecting <br />12 donuts by adding coating,
-                    <br />topping and drizzle.
-                </h3>
-                <h3 class="funky">REMAINING D<img src="images/donut 1.png" />NUTS &nbsp;&nbsp;<span id="count">0</span>
-                    <span class="funky-normal"> OF </span><span id="total">0</span></h3>
-            </div>
-            <div class="col-6 donut-selection">
-                <!--Remove below and rewrite the code for donut selection-->
-                <div class="movie-container d-none">
-                    <!--Hidden code-->
-                    <!--THis is for donut selection-->
-                    <label>Pick a donut:</label>
-                    <select id="movie">
-                        <option value="10">Strawberry ($10)</option>
-                    </select>
+        <div class="dbs-body">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Build Your Own Dozen</h1>
+                    <p>Customize your box by selecting 12 donuts by adding coating,
+                        topping and drizzle.
+                    </p>
+                    <span class="funky">
+                        REMAINING D<img src="images/donut 1.png" />NUTS
+                        <b id="count">0</b> <span class="funky-normal"> OF </span><b id="total">0</b>
+                    </span>
                 </div>
-                <!--End waste code-->
-                <div class="container">
-                    <div class="row">
-                        <div class="seat selected"></div>
-                        <div class="seat selected"></div>
-                        <div class="seat"></div>
-                        <div class="seat"></div>
+                <div class="col-6">
+                    <div class="donut-selection">
+                        <!--Remove below and rewrite the code for donut selection-->
+                        <div class="movie-container d-none">
+                            <!--Hidden code-->
+                            <!--THis is for donut selection-->
+                            <label>Pick a donut:</label>
+                            <select id="movie">
+                                <option value="10">Strawberry ($10)</option>
+                            </select>
+                        </div>
+                        <!--End waste code-->
+                        <div class="container donut-box">
+                            <div class="row">
+                                <div class="seat selected"></div>
+                                <div class="seat selected"></div>
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="seat selected"></div>
+                                <div class="seat selected"></div>
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="seat selected"></div>
+                                <div class="seat selected"></div>
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <div class="seat selected"></div>
-                        <div class="seat selected"></div>
-                        <div class="seat"></div>
-                        <div class="seat"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="seat selected"></div>
-                        <div class="seat selected"></div>
-                        <div class="seat"></div>
-                        <div class="seat"></div>
-                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <section class="zig-zag-bottom zig-zag-top">
         <div class="wizard-container">
-            <div class="card wizard-card" id="wizard">
+            <div class="wizard-card" id="wizard">
                 <form action="" method="">
                     <div class="wizard-header">
 
@@ -114,78 +118,78 @@
                             <div class="choices">
                                 <input type="checkbox" name="choice" id="cb1" />
                                 <label for="cb1">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/bacon.png" />
                                         Bacon in the Sun
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb2" /><label for="cb2">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/beachball.png" />
                                         Beach Ball
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="cb3" /><label for="cb3">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/blueberry.jpg" />
                                         Blueberry Lemonage
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="cb4" /><label for="cb4">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/chocexplo.png" />
                                         Chocolate Explosion
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb5" />
                                 <label for="cb5">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/chocopeanut.png" />
                                         Caramel Crunch
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb6" /><label for="cb6">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/cinnamon.png" />
                                         Cinnamon Bun
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="cb7" /><label for="cb7">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/coconut.png" />
                                         Coconut Bun
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="cb8" /><label for="cb8">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/peanut.png" />
                                         Peanut Jelly
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb9" /><label for="cb9">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/strawberrychoco.png" />
                                         Chocolate Strawberry
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb10" /><label for="cb10">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/strawberryconfetti.png" />
                                         Strawberry Confetti
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb11" /><label for="cb11">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/sunrise.png" />
                                         Sunrise
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="cb12" /><label for="cb12">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/flip-flop.png" />
                                         The Flip Flop
                                     </div>
@@ -201,78 +205,78 @@
                             <div class="choices">
                                 <input type="checkbox" name="choice" id="t1" />
                                 <label for="t1">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/none.png" />
                                         None
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t2" /><label for="t2">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/apple.png" />
                                         Apple
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="t3" /><label for="t3">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/streu.png" />
                                         Streusel
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="t4" /><label for="t4">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/bacont.png" />
                                         Bacon
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t5" />
                                 <label for="t5">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/peanutt.png" />
                                         Peanuts
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t6" /><label for="t6">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/graham.png" />
                                         Graham Cracker
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="t7" /><label for="t7">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/oreo.png" />
                                         Oreos
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="t8" /><label for="t8">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/cinnamonsugar.png" />
                                         Cinnamon Sugar
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t9" /><label for="t9">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/coconutt.png" />
                                         Coconut
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t10" /><label for="t10">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/rainbow.png" />
                                         Rainbow Sprinkles
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t11" /><label for="t11">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/chocosprinkles.png" />
                                         Chocolate Sprinkles
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="t12" /><label for="t12">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/sugar.png" />
                                         Powdered Sugar
                                     </div>
@@ -288,78 +292,78 @@
                             <div class="choices">
                                 <input type="checkbox" name="choice" id="d1" />
                                 <label for="d1">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/none.png" />
                                         None
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d2" /><label for="d2">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/pumpkin.png" />
                                         Pumpkin
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="d3" /><label for="d3">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/Hotfudge.png" />
                                         Hot Fudge
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="d4" /><label for="d4">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/rasperry.png" />
                                         Raspberry
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d5" />
                                 <label for="d5">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/vannilla.png" />
                                         Vanilla
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d6" /><label for="d6">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/choco.png" />
                                         Chocolate
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="d7" /><label for="d7">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/choco.png" />
                                         Chocolate
                                     </div>
 
                                 </label>
                                 <input type="checkbox" name="choice" id="d8" /><label for="d8">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/choco.png" />
                                         Chocolate
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d9" /><label for="d9">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/choco.png" />
                                         Chocolate
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d10" /><label for="d10">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/choco.png" />
                                         Chocolate
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d11" /><label for="d11">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/choco.png" />
                                         Chocolate
                                     </div>
                                 </label>
                                 <input type="checkbox" name="choice" id="d12" /><label for="d12">
-                                    <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                                    <div class="choice-type">
                                         <img src="images/flip-flop.png" />
                                         The Flip Flop
                                     </div>
@@ -370,15 +374,15 @@
                     <div class="wizard-footer">
                         <div class="float-end">
                             <button class='btn btn-next btn-fill btn-danger btn-wd'>
-                                Next <i class="fas fa-arrow-right"></i>
+                                Next <i class="material-icons">arrow_forward</i>
                             </button>
                             <button class='btn btn-finish btn-fill btn-danger btn-wd'>
-                                Next <i class="fas fa-arrow-right"></i>
+                                Next <i class="material-icons">arrow_forward</i>
                             </button>
                         </div>
                         <div class="float-start">
                             <button class='btn btn-previous btn-fill btn-danger btn-wd'>
-                                <i class="fas fa-arrow-left"></i> Previous
+                                <i  class="material-icons"> arrow_back</i> Previous
                             </button>
                         </div>
                         <div class="clearfix"></div>
@@ -388,7 +392,7 @@
         </div> <!-- wizard container -->
     </section>
     <section class="bottom-section">
-        <div class="d-flex flex-row justify-content-between align-items-center">
+        
             <div class="left-section">
                 <h3>Current Selection</h3>
                 <div class="row">
@@ -434,7 +438,7 @@
                 <button class="btn btn-add active">Add donut to Box</button>
                 <button class="btn btn-cancel">Cancel</button>
             </div>
-        </div>
+       
     </section>
 
 
